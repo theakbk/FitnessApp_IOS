@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865E0F49261B721100CF4295 /* Updateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E0F48261B721100CF4295 /* Updateable.swift */; };
+		865E0FB2261C795E00CF4295 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 865E0FB1261C795E00CF4295 /* GoogleService-Info.plist */; };
+		865E0FB5261DBF5C00CF4295 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E0FB4261DBF5C00CF4295 /* TableViewController.swift */; };
 		868E6A682615ED7400B0175C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A672615ED7400B0175C /* AppDelegate.swift */; };
 		868E6A6A2615ED7400B0175C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A692615ED7400B0175C /* SceneDelegate.swift */; };
 		868E6A6C2615ED7400B0175C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A6B2615ED7400B0175C /* ViewController.swift */; };
 		868E6A6F2615ED7400B0175C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868E6A6D2615ED7400B0175C /* Main.storyboard */; };
 		868E6A712615ED8100B0175C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868E6A702615ED8100B0175C /* Assets.xcassets */; };
 		868E6A742615ED8100B0175C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868E6A722615ED8100B0175C /* LaunchScreen.storyboard */; };
+		868E6A7D2615EF1500B0175C /* RegControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A7C2615EF1500B0175C /* RegControllerViewController.swift */; };
+		868E6A812615F19B00B0175C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A802615F19B00B0175C /* Workout.swift */; };
+		868E6A842615F1BC00B0175C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E6A832615F1BC00B0175C /* FirebaseService.swift */; };
+		B754741467835295AD0FB25A /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD628272BF9CC8AD840DAC4D /* Pods_FitnessApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B0E58EA4F5FE369E2BAE83B /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		865E0F48261B721100CF4295 /* Updateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updateable.swift; sourceTree = "<group>"; };
+		865E0FB1261C795E00CF4295 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		865E0FB4261DBF5C00CF4295 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		868E6A642615ED7400B0175C /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868E6A672615ED7400B0175C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868E6A692615ED7400B0175C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,11 @@
 		868E6A702615ED8100B0175C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868E6A732615ED8100B0175C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868E6A752615ED8100B0175C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868E6A7C2615EF1500B0175C /* RegControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegControllerViewController.swift; sourceTree = "<group>"; };
+		868E6A802615F19B00B0175C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		868E6A832615F1BC00B0175C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		AD628272BF9CC8AD840DAC4D /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F596133A3855AADF39CAE179 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B754741467835295AD0FB25A /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				868E6A662615ED7400B0175C /* FitnessApp */,
 				868E6A652615ED7400B0175C /* Products */,
+				F04659E24561BF207FE2BE4F /* Pods */,
+				8DE5A5097CEB121A38C338EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,38 @@
 		868E6A662615ED7400B0175C /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				868E6A832615F1BC00B0175C /* FirebaseService.swift */,
 				868E6A672615ED7400B0175C /* AppDelegate.swift */,
 				868E6A692615ED7400B0175C /* SceneDelegate.swift */,
 				868E6A6B2615ED7400B0175C /* ViewController.swift */,
+				868E6A7C2615EF1500B0175C /* RegControllerViewController.swift */,
+				868E6A802615F19B00B0175C /* Workout.swift */,
 				868E6A6D2615ED7400B0175C /* Main.storyboard */,
 				868E6A702615ED8100B0175C /* Assets.xcassets */,
 				868E6A722615ED8100B0175C /* LaunchScreen.storyboard */,
 				868E6A752615ED8100B0175C /* Info.plist */,
+				865E0FB1261C795E00CF4295 /* GoogleService-Info.plist */,
+				865E0F48261B721100CF4295 /* Updateable.swift */,
+				865E0FB4261DBF5C00CF4295 /* TableViewController.swift */,
 			);
 			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		8DE5A5097CEB121A38C338EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD628272BF9CC8AD840DAC4D /* Pods_FitnessApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F04659E24561BF207FE2BE4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F596133A3855AADF39CAE179 /* Pods-FitnessApp.debug.xcconfig */,
+				4B0E58EA4F5FE369E2BAE83B /* Pods-FitnessApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 868E6A782615ED8100B0175C /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
+				8DFA6D31826C5AA872B6491F /* [CP] Check Pods Manifest.lock */,
 				868E6A602615ED7400B0175C /* Sources */,
 				868E6A612615ED7400B0175C /* Frameworks */,
 				868E6A622615ED7400B0175C /* Resources */,
+				3ADFE4C6E56133291C2A7007 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868E6A742615ED8100B0175C /* LaunchScreen.storyboard in Resources */,
+				865E0FB2261C795E00CF4295 /* GoogleService-Info.plist in Resources */,
 				868E6A712615ED8100B0175C /* Assets.xcassets in Resources */,
 				868E6A6F2615ED7400B0175C /* Main.storyboard in Resources */,
 			);
@@ -132,14 +177,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ADFE4C6E56133291C2A7007 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFA6D31826C5AA872B6491F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		868E6A602615ED7400B0175C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865E0F49261B721100CF4295 /* Updateable.swift in Sources */,
+				868E6A812615F19B00B0175C /* Workout.swift in Sources */,
 				868E6A6C2615ED7400B0175C /* ViewController.swift in Sources */,
+				865E0FB5261DBF5C00CF4295 /* TableViewController.swift in Sources */,
 				868E6A682615ED7400B0175C /* AppDelegate.swift in Sources */,
 				868E6A6A2615ED7400B0175C /* SceneDelegate.swift in Sources */,
+				868E6A842615F1BC00B0175C /* FirebaseService.swift in Sources */,
+				868E6A7D2615EF1500B0175C /* RegControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +375,7 @@
 		};
 		868E6A792615ED8100B0175C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F596133A3855AADF39CAE179 /* Pods-FitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +395,7 @@
 		};
 		868E6A7A2615ED8100B0175C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0E58EA4F5FE369E2BAE83B /* Pods-FitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

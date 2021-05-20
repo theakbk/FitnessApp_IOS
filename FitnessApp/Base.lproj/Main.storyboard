@@ -1,24 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velkommen til Theas Fitness app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-sH-xju">
+                                <rect key="frame" x="82" y="22" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="fIB-CE-m5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISf-T1-e55">
+                                <rect key="frame" x="121" y="115" width="173" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pXV-60-ySK"/>
+                                    <constraint firstAttribute="width" constant="173" id="y72-MP-RuI"/>
+                                </constraints>
+                                <state key="normal" title="Registrer din workout her"/>
+                                <connections>
+                                    <segue destination="6KV-mq-IMh" kind="showDetail" id="OL4-GB-xZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-VA-TFC">
+                                <rect key="frame" x="118" y="229" width="178" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="sEN-3f-UeP"/>
+                                </constraints>
+                                <state key="normal" title="Se dine tidligere workouts"/>
+                                <connections>
+                                    <segue destination="cpP-oS-9wf" kind="showDetail" id="jLH-jt-CAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ohr-VA-TFC" secondAttribute="trailing" constant="118" id="3B3-Ua-Liw"/>
+                            <constraint firstItem="Ohr-VA-TFC" firstAttribute="top" secondItem="ISf-T1-e55" secondAttribute="bottom" constant="84" id="8qW-Su-Fcx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ISf-T1-e55" secondAttribute="trailing" constant="120" id="BLi-HA-aLS"/>
+                            <constraint firstItem="gH2-sH-xju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Ovx-Sw-5UI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gH2-sH-xju" secondAttribute="trailing" constant="82" id="beC-8w-bQZ"/>
+                            <constraint firstItem="Ohr-VA-TFC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="khS-j6-VHj"/>
+                            <constraint firstItem="ISf-T1-e55" firstAttribute="top" secondItem="gH2-sH-xju" secondAttribute="bottom" constant="72" id="uxs-nH-RiF"/>
+                            <constraint firstItem="ISf-T1-e55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="y9M-xB-f77"/>
+                            <constraint firstItem="gH2-sH-xju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="zgK-S9-5iS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aC1-le-KUX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="81"/>
+        </scene>
+        <!--Reg Controller View Controller-->
+        <scene sceneID="GSW-y5-3Qq">
+            <objects>
+                <viewController id="6KV-mq-IMh" customClass="RegControllerViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Li2-9Q-8Cz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXF-rO-hgM">
+                                <rect key="frame" x="9" y="8" width="51" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="Mdw-fi-ATg"/>
+                                </constraints>
+                                <state key="normal" title="Forside"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="frontpage" id="vwY-cm-9oL"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njn-Ep-lZp">
+                                <rect key="frame" x="248" y="85" width="146" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Dwk-UI-bNL"/>
+                                    <constraint firstAttribute="height" constant="216" id="kVb-YU-IYZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="6KV-mq-IMh" id="OuL-YS-jUE"/>
+                                    <outlet property="delegate" destination="6KV-mq-IMh" id="Aqk-jb-FqI"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vælg aktivitet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUo-Bg-UXw">
+                                <rect key="frame" x="20" y="183" width="109" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Jne-Xs-i2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hvor lang tid? vælg dit svar i minutter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwE-1j-iFE">
+                                <rect key="frame" x="20" y="383" width="283" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="7Vx-zL-r9A"/>
+                                    <constraint firstAttribute="height" constant="21" id="UCc-mH-wqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUd-4G-7Va">
+                                <rect key="frame" x="296" y="350" width="93" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="79Y-dY-kwB"/>
+                                    <constraint firstAttribute="width" constant="93" id="nOL-HM-AcL"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="6KV-mq-IMh" id="HE8-QY-Uuc"/>
+                                    <outlet property="delegate" destination="6KV-mq-IMh" id="Dpd-is-n3C"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-fZ-9ac">
+                                <rect key="frame" x="160" y="727" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="Bht-Hh-eXj"/>
+                                    <constraint firstAttribute="height" constant="30" id="uss-zF-0I4"/>
+                                </constraints>
+                                <state key="normal" title="Gem Workout"/>
+                                <connections>
+                                    <action selector="SaveToFirebase:" destination="6KV-mq-IMh" eventType="touchUpInside" id="55k-Cd-X08"/>
+                                    <segue destination="ZJi-zF-OZt" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="1FU-jd-1R6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZVr-MU-iLU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fUo-Bg-UXw" firstAttribute="top" secondItem="gXF-rO-hgM" secondAttribute="bottom" constant="145" id="1Or-FV-nVY"/>
+                            <constraint firstItem="0FB-fZ-9ac" firstAttribute="leading" secondItem="ZVr-MU-iLU" secondAttribute="leading" constant="160" id="86g-HO-rb4"/>
+                            <constraint firstItem="ZVr-MU-iLU" firstAttribute="trailing" secondItem="0FB-fZ-9ac" secondAttribute="trailing" constant="160" id="M0I-fs-rQq"/>
+                            <constraint firstItem="ZVr-MU-iLU" firstAttribute="trailing" secondItem="njn-Ep-lZp" secondAttribute="trailing" constant="20" id="MDK-Ij-IEe"/>
+                            <constraint firstItem="ZVr-MU-iLU" firstAttribute="bottom" secondItem="TwE-1j-iFE" secondAttribute="bottom" constant="404" id="TB2-Nm-s2B"/>
+                            <constraint firstItem="ZVr-MU-iLU" firstAttribute="bottom" secondItem="ZUd-4G-7Va" secondAttribute="bottom" constant="371" id="XKM-lE-H4T"/>
+                            <constraint firstItem="TwE-1j-iFE" firstAttribute="leading" secondItem="ZVr-MU-iLU" secondAttribute="leading" constant="20" id="YvA-A8-8Z3"/>
+                            <constraint firstItem="ZVr-MU-iLU" firstAttribute="bottom" secondItem="0FB-fZ-9ac" secondAttribute="bottom" constant="51" id="Z3q-gb-ZcH"/>
+                            <constraint firstItem="gXF-rO-hgM" firstAttribute="top" secondItem="ZVr-MU-iLU" secondAttribute="top" constant="8" id="cjy-5n-X8i"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUd-4G-7Va" secondAttribute="trailing" constant="25" id="gMa-oC-xEm"/>
+                            <constraint firstItem="fUo-Bg-UXw" firstAttribute="leading" secondItem="ZVr-MU-iLU" secondAttribute="leading" constant="20" id="jyn-cG-brW"/>
+                            <constraint firstItem="njn-Ep-lZp" firstAttribute="top" secondItem="ZVr-MU-iLU" secondAttribute="top" constant="85" id="lPY-Wi-jbJ"/>
+                            <constraint firstItem="gXF-rO-hgM" firstAttribute="leading" secondItem="ZVr-MU-iLU" secondAttribute="leading" constant="9" id="yTh-71-dl3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Activity" destination="njn-Ep-lZp" id="uE9-bw-Pl3"/>
+                        <outlet property="Time" destination="ZUd-4G-7Va" id="RZK-NR-8of"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2c-xr-BtK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZJi-zF-OZt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="80"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="3VA-5B-js5">
+            <objects>
+                <viewController id="cpP-oS-9wf" customClass="TableViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kO5-c7-FbB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BM0-Yp-m6J">
+                                <rect key="frame" x="20" y="198" width="374" height="544"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mycell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" id="11P-lk-AKI">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="11P-lk-AKI" id="hQX-mI-ysT">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6KV-mq-IMh" kind="showDetail" id="RWR-og-hyP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Her ses tidligere workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOW-7S-eEh">
+                                <rect key="frame" x="108" y="91" width="198" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="szL-Qg-WzE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xni-D6-pAn">
+                                <rect key="frame" x="20" y="20" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vp8-Kt-rG2"/>
+                                    <constraint firstAttribute="width" constant="95" id="cjZ-zk-KEZ"/>
+                                </constraints>
+                                <state key="normal" title="Gå til forsiden"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="nLi-Eb-0Pc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X94-bk-E0o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X94-bk-E0o" firstAttribute="trailing" secondItem="fOW-7S-eEh" secondAttribute="trailing" constant="108" id="F8b-Gh-zWT"/>
+                            <constraint firstItem="fOW-7S-eEh" firstAttribute="leading" secondItem="X94-bk-E0o" secondAttribute="leading" constant="108" id="IO7-e7-AHQ"/>
+                            <constraint firstItem="fOW-7S-eEh" firstAttribute="top" secondItem="xni-D6-pAn" secondAttribute="bottom" constant="41" id="LAr-we-taj"/>
+                            <constraint firstItem="xni-D6-pAn" firstAttribute="leading" secondItem="X94-bk-E0o" secondAttribute="leading" constant="20" id="XKR-t1-VTc"/>
+                            <constraint firstItem="xni-D6-pAn" firstAttribute="top" secondItem="X94-bk-E0o" secondAttribute="top" constant="20" id="fVh-sq-4Zf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="BM0-Yp-m6J" id="Byc-it-BJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIm-b9-ZWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1075"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RWR-og-hyP"/>
+        <segue reference="vwY-cm-9oL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

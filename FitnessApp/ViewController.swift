@@ -6,13 +6,24 @@
 //
 
 import UIKit
+//import Firebase
 
-class ViewController: UIViewController {
+let fs = FirebaseService()
+
+class ViewController: UIViewController{//}, Updateable{
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
+    {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //fS.parent = self
+        fs.storageRef = fs.storage.reference()
+        fs.startListener() // here you know, that Firebase has been initialized
+        print("viewCOntroller - did load")
     }
+    
+    
 
 
 }
